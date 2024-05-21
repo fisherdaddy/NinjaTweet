@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NinjaTweet 配置</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 10px;
+            width: 350px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            font-size: 18px;
+            color: #0056b3;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        label:hover {
+            background-color: #e0e0e0;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .status {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>NinjaTweet - 配置</h1>
+    <h2>选择你要隐藏的元素</h2>
+    <div class="checkbox-group">
+        <label><input type="checkbox" id="hideX">X logo</label>
+        <label><input type="checkbox" id="hideHomepage">主页</label>
+        <label><input type="checkbox" id="hideSearch">搜索</label>
+        <label><input type="checkbox" id="hideNotifications">通知</label>
+        <label><input type="checkbox" id="hideMessages">私信</label>
+        <label><input type="checkbox" id="hideGrok">Grok</label>
+        <label><input type="checkbox" id="hidePremium">Premium</label>
+        <label><input type="checkbox" id="hideLists">列表</label>
+        <label><input type="checkbox" id="hideBookmarks">书签</label>
+        <label><input type="checkbox" id="hideCommunities">社群</label>
+        <label><input type="checkbox" id="hideOrganizations">认证组织</label>
+        <label><input type="checkbox" id="hideProfile">个人资料</label>
+        <label><input type="checkbox" id="hideMore">更多菜单项</label>
+        <label><input type="checkbox" id="hidePosts">发帖</label>
+        <label><input type="checkbox" id="hideUserProfile">左下头像</label>
+        <label><input type="checkbox" id="hideTopAvatar">顶部头像</label>
+        <label><input type="checkbox" id="hideSidebar">右侧边栏</label>
+    </div>
+    <button id="toggleCustomization">保存</button>
+    <div class="status" id="statusText"></div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
