@@ -18,6 +18,7 @@ const ELEMENT_MAPPING = {
     hideCommunities: '[aria-label="社群"]',
     hideOrganizations: '[href="/i/verified-orgs-signup"]',
     hideGrok: '[href="/i/grok"]',
+    hideJobs: '[href="/jobs"]',
     hideMore: '[aria-label="更多菜单项"]',
     hideTopAvatar: TOP_POST_AVATAR,
 };
